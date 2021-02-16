@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/******************** Accueil ***********************/
+
+.app {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #eae6df;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.accueil {
+    position: fixed;
+    top: 2%;
+    right: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+    height: 100vh;
+    border: solid 1px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about_me {
+    height: 100vh;
+    padding-top: 7vh;
+    border: solid 1px black;
 }
 
-.App-link {
-  color: #61dafb;
+.parcours {
+    height: 100vh;
+    padding-top: 7vh;
+    border: solid 1px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projets {
+    height: 100vh;
+    padding-top: 7vh;
+    border: solid 1px black;
+}
+
+.contact {
+    height: 20vh;
+    border: solid 1px black;
+}
+
+
+/******************** Header ***********************/
+
+.bodyHeader {
+    position: fixed;
+    height: 7vh;
+    width: 100vw;
+}
+
+.navbar {
+    height: 7vh;
+    background-color: #eae6df;
+}
+
+.nav-link {
+    width: 10vw;
 }
