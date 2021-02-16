@@ -11,7 +11,7 @@ class Parcours extends Component {
           link={"https://www.guillaumequeste.fr/parcours"}
         />
 
-        <a href="/" class="accueil">
+        <a href="/" className="accueil">
           accueil
         </a>
 

@@ -11,7 +11,7 @@ class Autres_projets extends Component {
           link={"https://www.guillaumequeste.fr/autres_projets"}
         />
 
-        <a href="/" class="accueil">
+        <a href="/" className="accueil">
           accueil
         </a>
 

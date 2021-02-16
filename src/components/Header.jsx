@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-        <div class="bodyHeader">
+        <div className="bodyHeader">
       <nav className="navbar navbar-expand-lg navbar-light">
         <button
           className="navbar-toggler"
@@ -20,28 +20,22 @@ class Header extends Component {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a
-                exact
-                activeClassName="active"
                 className="nav-link"
                 href="#about_me"
               >
                 About me
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
-                exact
-                activeClassName="active"
                 className="nav-link"
                 href="#parcours"
               >
                 Parcours
               </a>
-            </li>
+    </li> */}
             <li className="nav-item">
               <a
-                exact
-                activeClassName="active"
                 className="nav-link"
                 href="#projets"
               >
@@ -50,8 +44,6 @@ class Header extends Component {
             </li>
             <li className="nav-item">
               <a
-                exact
-                activeClassName="active"
                 className="nav-link"
                 href="#contact"
               >

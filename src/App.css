@@ -18,6 +18,57 @@
 .home {
     height: 100vh;
     border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+}
+
+.presentation {
+    width: 100vw;
+    height: 20%;
+    border: solid 1px black;
+}
+
+.identite {
+    width: 100vw;
+    height: 60%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .identite {
+        flex-direction: row;
+    }
+}
+
+.prenom_nom {
+    width: 100vw;
+    height: 60%;
+}
+
+.photo {
+    width: 100vw;
+    height: 40%;
+}
+
+.liens {
+    width: 100vw;
+    height: 20%;
+    border: solid 1px black;
+}
+
+.fichiers {
+    display: flex;
+}
+
+.bouton {
+    width: 50%;
+}
+
+.reseaux {
+    display: flex;
 }
 
 
@@ -41,26 +92,38 @@
     width: 100vw;
     height: 50%;
     border: solid 1px black;
+    display: flex;
+    padding: 5%;
 }
 
 @media screen and (min-width: 768px) {
     .texte_about_me {
-        width: 50%;
+        width: 60%;
         height: 100%;
+        font-size: 2em;
     }
+}
+
+.p_texte_about_me {
+    margin: auto;
 }
 
 .barres {
     width: 100vw;
     height: 50%;
     border: solid 1px black;
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {
     .barres {
-        width: 50%;
+        width: 40%;
         height: 100%;
     }
+}
+
+.p_barres {
+    margin: auto;
 }
 
 
@@ -111,8 +174,14 @@
 
 .projets {
     min-height: 100vh;
-    padding-top: 7vh;
+    padding-top: 2vh;
     border: solid 1px black;
+}
+
+@media screen and (min-width: 768px) {
+    .projets {
+        padding-top: 5vh;
+    }
 }
 
 .col-md-4 {
@@ -147,6 +216,44 @@
 .contact {
     height: 20vh;
     border: solid 1px black;
+    padding-top: 2vh;
+}
+
+@media screen and (min-width: 768px) {
+    .titreContact {
+        padding-top: 5vh;
+    }
+}
+
+
+/******************** Contact ***********************/
+
+.bodyContact {
+    background-color: #eae6df;
+    min-height: 100vh;
+}
+
+.titreContact {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .titreContact {
+        font-size: 2em;
+    }
+}
+
+
+/******************** Not Found ***********************/
+
+.bodyNotFound {
+    background-color: #eae6df;
+    min-height: 100vh;
+    display: flex;
+}
+
+.titreNotFound {
+    margin: auto;
 }
 
 

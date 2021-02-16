@@ -112,18 +112,18 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="bodyLogement">
+      <div className="bodyContact">
         <Helmet
           title={"Contact Portfolio Guillaume Queste"}
           link={"https://www.guillaumequeste.fr/contact"}
         />
 
-        <a href="/" class="accueil">
+        <a href="/" className="accueil">
           accueil
         </a>
 
         <form className="container pb-5">
-          <h3 className="text-center pt-2">Formulaire de contact</h3>
+          <h3 className="text-center pt-2 titreContact">Formulaire de contact</h3>
 
           <div className="form-group">
             <label htmlFor="nom">Nom</label>
