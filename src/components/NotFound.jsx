@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Header from './Header'
 import Helmet from './Helmet'
+import { NavLink } from "react-router-dom";
 
 class NotFound extends Component {
   
@@ -9,8 +9,8 @@ class NotFound extends Component {
             <div>
                 <Helmet title={"Not Found Portfolio Guillaume Queste"}
                         link={"https://www.guillaumequeste.fr"} />
-                <Header />
                 <h2>404 Not Found</h2>
+                <NavLink to="/">Retour à l'accueil</NavLink>
             </div>
         )
     }

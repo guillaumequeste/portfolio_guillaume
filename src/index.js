@@ -5,6 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
+import Parcours from './components/Parcours'
+import Autres_projets from './components/Autres_projets'
+import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import $ from 'jquery'
@@ -15,6 +18,9 @@ const Root = () => (
     <Router>
         <Switch>
             <Route exact path='/' component={App}/>
+            <Route path='/parcours' component={Parcours}/>
+            <Route path='/autres_projets' component={Autres_projets}/>
+            <Route path='/contact' component={Contact}/>
             <Route path='/notfound' component={NotFound}/>
             <Redirect to="/notfound" />
         </Switch>
