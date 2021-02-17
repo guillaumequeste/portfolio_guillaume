@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Helmet from "./Helmet";
 
-class Parcours extends Component {
 
+class Parcours extends Component {
   render() {
     return (
       <div className="bodyParcours">
@@ -15,8 +15,10 @@ class Parcours extends Component {
           accueil
         </a>
 
-        <p>Parcours</p>
+        <h3 className="text-center pt-2">Parcours</h3>
 
+        
+       
       </div>
     );
   }

@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Helmet from "./components/Helmet";
 import { NavLink } from "react-router-dom";
+
 import portfolio_marine from "./img/portfolio_marine.png";
 import cinema from "./img/cinema.png";
 import decouverte from "./img/decouverte.png";
@@ -35,7 +37,7 @@ const App = () => (
       </a>
 
       {/* home */}
-      <div className="home">
+      <div className="home" id="home">
         <div className="presentation">
           <p>Bonjour, je suis développeur front-end basé en Normandie.</p>
           <p>Binvenue sur mon portfolio !</p>
@@ -87,7 +89,7 @@ const App = () => (
       </div>
 
       {/* parcours */}
-      {/* <div className="parcours" id="parcours">
+      <div className="parcours" id="parcours">
         <div className="texte_parcours">
           <p>
             Mon parcours atypique me permet de m'adapter à toutes les
@@ -98,7 +100,7 @@ const App = () => (
         <div className="image">
           <p>image</p>
         </div>
-</div> */}
+      </div>
 
       {/* projets */}
       <div className="projets" id="projets">
@@ -289,6 +291,7 @@ const App = () => (
           <NavLink to="/contact">me contacter</NavLink>.
         </p>
       </div>
+      <Footer />
     </div>
   </>
 );

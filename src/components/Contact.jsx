@@ -123,7 +123,7 @@ class Contact extends Component {
         </a>
 
         <form className="container pb-5">
-          <h3 className="text-center pt-2 titreContact">Formulaire de contact</h3>
+          <h3 className="text-center pt-5 titreContact">Formulaire de contact</h3>
 
           <div className="form-group">
             <label htmlFor="nom">Nom</label>
@@ -196,7 +196,7 @@ class Contact extends Component {
               id="message"
               name="message"
               onChange={this.handleChangeMessage}
-              placeholder="Laisser votre message"
+              placeholder="Laissez votre message"
               required
               value={this.state.message}
               rows="4"

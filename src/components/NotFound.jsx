@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 class NotFound extends Component {
   render() {
     return (
+      <div>
       <div className="bodyNotFound">
         <Helmet
           title={"Not Found Portfolio Guillaume Queste"}
@@ -14,6 +15,7 @@ class NotFound extends Component {
           <h2>Il n'y a rien ici.</h2>
           <NavLink to="/">Retour à l'accueil</NavLink>
         </div>
+      </div>
       </div>
     );
   }
