@@ -25,6 +25,7 @@ import agenceimmophp from "./img/agenceimmophp.png";
 import sitedynamique from "./img/sitedynamique.jpg";
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
+import parcours from "./img/parcours.jpg";
 
 import cv from "./docs/CVGuillaumeQueste.pdf";
 import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
@@ -126,21 +127,19 @@ const App = () => (
         </div>
         <div className="barres">
           <div className="p_barres">
-            <p>HTML : 90%</p>
-            <p>CSS : 90%</p>
-            <p>JavaScript : 80%</p>
-            <p>React : 80%</p>
-            <p>Angular : 80%</p>
-            <p>Vue : 70%</p>
+            <h5 className="text-center font-italic pt-3 pb-2"><u>Compétences</u></h5>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React</p>
+            <p>Angular</p>
+            <p>Vue</p>
           </div>
         </div>
       </div>
 
       {/* parcours */}
       <div className="parcours" id="parcours">
-        <div className="image">
-          <p>image</p>
-        </div>
         <div className="texte_parcours">
           <p>
             Mon parcours atypique me permet de m'adapter à toutes les
@@ -150,6 +149,13 @@ const App = () => (
               <p className="p_bouton_lien">En voir plus sur mon parcours</p>
             </NavLink>
           </p>
+        </div>
+        <div className="image">
+        <img
+              src={parcours}
+              alt="parcours"
+              className="img_parcours"
+            />
         </div>
       </div>
 

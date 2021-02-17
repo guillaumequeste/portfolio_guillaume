@@ -224,14 +224,22 @@
 }
 
 .p_barres {
+    width: 80%;
     margin: auto;
+    padding-left: 5%;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .p_barres {
+        width: 40%;
+    }
 }
 
 
 /* parcours */
 
 .parcours {
-    height: 100vh;
     padding-top: 7vh;
     display: flex;
     flex-direction: column;
@@ -240,8 +248,26 @@
 
 @media screen and (min-width: 768px) {
     .parcours {
-        flex-direction: row;
+        flex-direction: row-reverse;
+        height: 100vh;
     }
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        width: 50%;
+        height: 100%;
+        padding-left: 5%;
+    }
+}
+
+.img_parcours {
+    width: 100%;
 }
 
 .texte_parcours {
@@ -289,18 +315,6 @@
     font-size: 0.8em;
 }
 
-.image {
-    width: 100%;
-    height: 50%;
-}
-
-@media screen and (min-width: 768px) {
-    .image {
-        width: 50%;
-        height: 100%;
-    }
-}
-
 
 /* projets */
 
@@ -322,6 +336,7 @@
     font-size: 1.3em;
     text-decoration: underline;
     padding-top: 20%;
+    padding-bottom: 2%;
 }
 
 @media screen and (min-width: 768px) {

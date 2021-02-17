@@ -9,7 +9,7 @@ class NotFound extends Component {
       <div className="bodyNotFound">
         <Helmet
           title={"Not Found Portfolio Guillaume Queste"}
-          link={"https://www.guillaumequeste.fr"}
+          link={"https://www.guillaumequeste.fr/notfound"}
         />
         <div className="titreNotFound">
           <h2>Il n'y a rien ici.</h2>
