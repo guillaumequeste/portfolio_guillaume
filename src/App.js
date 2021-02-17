@@ -23,6 +23,8 @@ import actrices from "./img/actrices.jpg";
 import serpent from "./img/serpent.jpg";
 import agenceimmophp from "./img/agenceimmophp.png";
 import sitedynamique from "./img/sitedynamique.jpg";
+import linkedin from "./img/linkedin.png";
+import github from "./img/github.png";
 
 import cv from "./docs/CVGuillaumeQueste.pdf";
 import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
@@ -64,6 +66,7 @@ const App = () => (
                 without="true"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="CV Guillaume Queste"
                 className="bouton_telecharger"
               >
                 <p className="titre_bouton_telecharger">Télécharger CV</p>
@@ -75,6 +78,7 @@ const App = () => (
                 without="true"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Projets Guillaume Queste"
                 className="bouton_telecharger"
               >
                 <p className="titre_bouton_telecharger">Télécharger Projets</p>
@@ -82,8 +86,25 @@ const App = () => (
             </div>
           </div>
           <div className="reseaux">
-            <div className="bouton">github</div>
-            <div className="bouton">linkedin</div>
+            <div className="div_lien">
+              <a
+                href="https://linkedin.com/in/guillaume-queste-19b88752"
+                title="Guillaume Queste lien LinkedIn"
+                target="_blank"
+                className="lien_reseau lien_reseau_linkedin"
+              >
+                <img src={linkedin} alt="linkedin" className="img_reseau" />
+              </a>
+       
+              <a
+                href="https://github.com/guillaumequeste"
+                title="Guillaume Queste lien GitHub"
+                target="_blank"
+                className="lien_reseau lien_reseau_github"
+              >
+                <img src={github} alt="github" className="img_reseau" />
+              </a>
+           </div>
           </div>
         </div>
       </div>

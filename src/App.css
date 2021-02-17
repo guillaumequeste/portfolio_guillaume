@@ -94,6 +94,7 @@
 
 .fichiers {
     display: flex;
+    height: 50%;
 }
 
 .div_telecharger {
@@ -137,7 +138,40 @@
 }
 
 .reseaux {
-    display: flex;
+    height: 50%;
+}
+
+.div_lien {
+    text-align: center;
+}
+
+.lien_reseau {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.lien_reseau_linkedin {
+    text-align: right;
+}
+
+.lien_reseau_github {
+    text-align: left;
+}
+
+.img_reseau {
+    width: 40px;
+    transition: transform 500ms;
+}
+
+@media screen and (min-width: 768px) {
+    .img_reseau {
+        width: 60px;
+    }
+}
+
+.img_reseau:hover {
+    transform: rotate(360deg);
 }
 
 
@@ -145,7 +179,6 @@
 
 .about_me {
     height: 100vh;
-    padding-top: 7vh;
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
