@@ -24,6 +24,9 @@ import serpent from "./img/serpent.jpg";
 import agenceimmophp from "./img/agenceimmophp.png";
 import sitedynamique from "./img/sitedynamique.jpg";
 
+import cv from "./docs/CVGuillaumeQueste.pdf";
+import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
+
 const App = () => (
   <>
     <Helmet
@@ -40,8 +43,11 @@ const App = () => (
       {/* home */}
       <div className="home" id="home">
         <div className="presentation">
-          <p>Bonjour, je suis développeur front-end basé en Normandie.<br />
-          Bienvenue sur mon portfolio !</p>
+          <p>
+            Bonjour, je suis développeur front-end basé en Normandie.
+            <br />
+            Bienvenue sur mon portfolio !
+          </p>
         </div>
         <div className="identite">
           <div className="prenom_nom">
@@ -52,8 +58,28 @@ const App = () => (
         </div>
         <div className="liens">
           <div className="fichiers">
-            <div className="bouton">cv</div>
-            <div className="bouton">projets</div>
+            <div className="div_telecharger">
+              <a
+                href={cv}
+                without="true"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="bouton_telecharger"
+              >
+                <p className="titre_bouton_telecharger">Télécharger CV</p>
+              </a>
+            </div>
+            <div className="div_telecharger">
+              <a
+                href={projets}
+                without="true"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="bouton_telecharger"
+              >
+                <p className="titre_bouton_telecharger">Télécharger Projets</p>
+              </a>
+            </div>
           </div>
           <div className="reseaux">
             <div className="bouton">github</div>
@@ -97,7 +123,8 @@ const App = () => (
         <div className="texte_parcours">
           <p>
             Mon parcours atypique me permet de m'adapter à toutes les
-            situations.<br />
+            situations.
+            <br />
             <NavLink to="/parcours">Parcours</NavLink>
           </p>
         </div>
@@ -105,7 +132,6 @@ const App = () => (
 
       {/* projets */}
       <div className="projets" id="projets">
-
         {/* projets React */}
         <h3 className="pl-5 pt-5 pb-1">Projets React</h3>
         <div className="row">
@@ -291,7 +317,7 @@ const App = () => (
         </p>
       </div>
 
-         <hr />
+      <hr />
 
       <Footer />
     </div>

@@ -96,8 +96,44 @@
     display: flex;
 }
 
-.bouton {
+.div_telecharger {
     width: 50%;
+    height: 40px;
+    display: flex;
+}
+
+.bouton_telecharger {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .bouton_telecharger {
+        width: 60%;
+    }
+}
+
+.bouton_telecharger:hover {
+    background-color: white;
+    border: solid 1px grey;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.titre_bouton_telecharger {
+    margin: auto;
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 350px) {
+    .titre_bouton_telecharger {
+        font-size: 1em;
+    }
 }
 
 .reseaux {
