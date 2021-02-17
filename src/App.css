@@ -10,6 +10,13 @@
     position: fixed;
     top: 2%;
     right: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.accueil:hover {
+    cursor: pointer;
+    color: black;
 }
 
 

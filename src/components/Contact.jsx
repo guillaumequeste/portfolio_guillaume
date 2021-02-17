@@ -119,7 +119,7 @@ class Contact extends Component {
         />
 
         <a href="/" className="accueil">
-          accueil
+          GQ
         </a>
 
         <form className="container pb-5">

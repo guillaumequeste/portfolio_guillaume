@@ -12,7 +12,7 @@ class Autres_projets extends Component {
         />
 
         <a href="/" className="accueil">
-          accueil
+          GQ
         </a>
 
         <p>Autres projets</p>

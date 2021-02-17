@@ -12,7 +12,7 @@ class Parcours extends Component {
         />
 
         <a href="/" className="accueil">
-          accueil
+          GQ
         </a>
 
         <h3 className="text-center pt-2">Parcours</h3>

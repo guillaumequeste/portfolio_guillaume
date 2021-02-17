@@ -33,7 +33,7 @@ const App = () => (
     <Header />
     <div className="app">
       <a href="/" className="accueil">
-        accueil
+        GQ
       </a>
 
       {/* home */}
