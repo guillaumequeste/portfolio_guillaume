@@ -146,7 +146,9 @@ const App = () => (
             Mon parcours atypique me permet de m'adapter à toutes les
             situations.
             <br />
-            <NavLink to="/parcours">Parcours</NavLink>
+            <NavLink to="/parcours" className="bouton_lien">
+              <p className="p_bouton_lien">En voir plus sur mon parcours</p>
+            </NavLink>
           </p>
         </div>
       </div>
@@ -154,7 +156,7 @@ const App = () => (
       {/* projets */}
       <div className="projets" id="projets">
         {/* projets React */}
-        <h3 className="pl-5 pt-5 pb-1">Projets React</h3>
+        <h3 className="pl-5 titre_projets">Projets React</h3>
         <div className="row">
           <a
             href="http://www.marinequeste.fr"
@@ -219,7 +221,7 @@ const App = () => (
         </div>
 
         {/* projets Angular */}
-        <h3 className="pl-5 pt-5 pb-1">Projets Angular</h3>
+        <h3 className="pl-5 titre_projets">Projets Angular</h3>
         <div className="row">
           <a
             href="http://fruitslegumes.guillaumequeste.fr"
@@ -242,7 +244,7 @@ const App = () => (
         </div>
 
         {/* projets Vue */}
-        <h3 className="pl-5 pt-5 pb-1">Projet Vue</h3>
+        <h3 className="pl-5 titre_projets">Projet Vue</h3>
         <div className="row">
           <a
             href="http://litterature.guillaumequeste.fr"
@@ -254,7 +256,7 @@ const App = () => (
         </div>
 
         {/* projets HTML/CSS */}
-        <h3 className="pl-5 pt-5 pb-1">Projets HTML/CSS</h3>
+        <h3 className="pl-5 titre_projets">Projets HTML/CSS</h3>
         <div className="row">
           <a
             href="http://dictionnaire.guillaumequeste.fr"
@@ -280,7 +282,7 @@ const App = () => (
         </div>
 
         {/* projets JS */}
-        <h3 className="pl-5 pt-5 pb-1">Projet JavaScript</h3>
+        <h3 className="pl-5 titre_projets">Projet JavaScript</h3>
         <div className="row">
           <a
             href="http://actrices.guillaumequeste.fr"
@@ -299,7 +301,7 @@ const App = () => (
         </div>
 
         {/* projets PHP */}
-        <h3 className="pl-5 pt-5 pb-1">Projets PHP</h3>
+        <h3 className="pl-5 titre_projets">Projets PHP</h3>
         <div className="row">
           <a
             href="http://agenceimmophp.guillaumequeste.fr"
@@ -334,7 +336,7 @@ const App = () => (
       <div className="contact" id="contact">
         <p className="p-2 text-center">
           Démarrons un projet ensemble, n'hésitez pas à{" "}
-          <NavLink to="/contact">me contacter</NavLink>
+          <NavLink to="/contact" className="lien_contact">me contacter</NavLink>
         </p>
       </div>
 
