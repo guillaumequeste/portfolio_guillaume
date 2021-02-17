@@ -31,6 +31,7 @@ const App = () => (
       link={"https://www.guillaumequeste.fr"}
     />
     <Header />
+
     <div className="app">
       <a href="/" className="accueil">
         GQ
@@ -39,12 +40,12 @@ const App = () => (
       {/* home */}
       <div className="home" id="home">
         <div className="presentation">
-          <p>Bonjour, je suis développeur front-end basé en Normandie.</p>
-          <p>Binvenue sur mon portfolio !</p>
+          <p>Bonjour, je suis développeur front-end basé en Normandie.<br />
+          Bienvenue sur mon portfolio !</p>
         </div>
         <div className="identite">
           <div className="prenom_nom">
-            <p>Guillaume</p>
+            <p className="p_prenom_nom">Guillaume</p>
             <p>Queste</p>
           </div>
           <div className="photo">photo</div>
@@ -90,24 +91,23 @@ const App = () => (
 
       {/* parcours */}
       <div className="parcours" id="parcours">
+        <div className="image">
+          <p>image</p>
+        </div>
         <div className="texte_parcours">
           <p>
             Mon parcours atypique me permet de m'adapter à toutes les
-            situations.
+            situations.<br />
+            <NavLink to="/parcours">Parcours</NavLink>
           </p>
-          <NavLink to="/parcours">Parcours</NavLink>
-        </div>
-        <div className="image">
-          <p>image</p>
         </div>
       </div>
 
       {/* projets */}
       <div className="projets" id="projets">
-        <h1 className="text-center">Projets</h1>
 
         {/* projets React */}
-        <h3 className="pl-5 pt-5 pb-1">React</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projets React</h3>
         <div className="row">
           <a
             href="http://www.marinequeste.fr"
@@ -172,7 +172,7 @@ const App = () => (
         </div>
 
         {/* projets Angular */}
-        <h3 className="pl-5 pt-5 pb-1">Angular</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projets Angular</h3>
         <div className="row">
           <a
             href="http://fruitslegumes.guillaumequeste.fr"
@@ -195,7 +195,7 @@ const App = () => (
         </div>
 
         {/* projets Vue */}
-        <h3 className="pl-5 pt-5 pb-1">Vue</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projet Vue</h3>
         <div className="row">
           <a
             href="http://litterature.guillaumequeste.fr"
@@ -207,7 +207,7 @@ const App = () => (
         </div>
 
         {/* projets HTML/CSS */}
-        <h3 className="pl-5 pt-5 pb-1">HTML/CSS</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projets HTML/CSS</h3>
         <div className="row">
           <a
             href="http://dictionnaire.guillaumequeste.fr"
@@ -233,7 +233,7 @@ const App = () => (
         </div>
 
         {/* projets JS */}
-        <h3 className="pl-5 pt-5 pb-1">JS</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projet JavaScript</h3>
         <div className="row">
           <a
             href="http://actrices.guillaumequeste.fr"
@@ -252,7 +252,7 @@ const App = () => (
         </div>
 
         {/* projets PHP */}
-        <h3 className="pl-5 pt-5 pb-1">PHP</h3>
+        <h3 className="pl-5 pt-5 pb-1">Projets PHP</h3>
         <div className="row">
           <a
             href="http://agenceimmophp.guillaumequeste.fr"
@@ -285,12 +285,14 @@ const App = () => (
 
       {/* contact */}
       <div className="contact" id="contact">
-        <h1 className="text-center">contact</h1>
-        <p className="pl-5">
+        <p className="p-2 text-center">
           Démarrons un projet ensemble, n'hésitez pas à{" "}
-          <NavLink to="/contact">me contacter</NavLink>.
+          <NavLink to="/contact">me contacter</NavLink>
         </p>
       </div>
+
+         <hr />
+
       <Footer />
     </div>
   </>
