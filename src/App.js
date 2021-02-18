@@ -339,14 +339,14 @@ const App = () => (
       <div className="parcours" id="parcours">
         <div className="texte_parcours">
           <div className="p_texte_parcours">
-            <p>
+            <div>
               Mon parcours atypique me permet de m'adapter à toutes les
               situations.
               <br />
               <NavLink to="/parcours" className="bouton_lien">
                 <p className="p_bouton_lien">En voir plus sur mon parcours</p>
               </NavLink>
-            </p>
+            </div>
           </div>
         </div>
         <div className="image">
@@ -356,12 +356,12 @@ const App = () => (
 
       {/* contact */}
       <div className="contact" id="contact">
-        <p className="p-2 text-center">
+        <div className="p-2 text-center">
           Démarrons un projet ensemble, n'hésitez pas à{" "}
           <NavLink to="/contact" className="lien_contact">
             me contacter
           </NavLink>
-        </p>
+        </div>
       </div>
 
       <hr />
