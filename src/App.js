@@ -96,7 +96,7 @@ const App = () => (
               >
                 <img src={linkedin} alt="linkedin" className="img_reseau" />
               </a>
-       
+
               <a
                 href="https://github.com/guillaumequeste"
                 title="Guillaume Queste lien GitHub"
@@ -105,7 +105,7 @@ const App = () => (
               >
                 <img src={github} alt="github" className="img_reseau" />
               </a>
-           </div>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +127,9 @@ const App = () => (
         </div>
         <div className="barres">
           <div className="p_barres">
-            <h5 className="text-center font-italic pt-3 pb-2"><u>Compétences</u></h5>
+            <h5 className="text-center font-italic pt-3 pb-2">
+              <u>Compétences</u>
+            </h5>
             <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
@@ -135,27 +137,6 @@ const App = () => (
             <p>Angular</p>
             <p>Vue</p>
           </div>
-        </div>
-      </div>
-
-      {/* parcours */}
-      <div className="parcours" id="parcours">
-        <div className="texte_parcours">
-          <p>
-            Mon parcours atypique me permet de m'adapter à toutes les
-            situations.
-            <br />
-            <NavLink to="/parcours" className="bouton_lien">
-              <p className="p_bouton_lien">En voir plus sur mon parcours</p>
-            </NavLink>
-          </p>
-        </div>
-        <div className="image">
-        <img
-              src={parcours}
-              alt="parcours"
-              className="img_parcours"
-            />
         </div>
       </div>
 
@@ -306,8 +287,23 @@ const App = () => (
           </a>
         </div>
 
-        {/* projets PHP */}
-        <h3 className="pl-5 titre_projets">Projets PHP</h3>
+        {/* autres projets */}
+        <h3 className="pl-5 titre_projets">Autres projets</h3>
+        <div className="div_autres_projets">
+          <p>
+            Curieux de nature, je m'intéresse également au côté back-end et aux
+            différentes technologies qui existent. Ainsi, j'ai appris les bases
+            des langages PHP et Java et j'ai appris à utiliser les frameworks
+            Symfony (avec MySQL) et Eclipse.
+          </p>
+          <p>J'ai appris à associer React avec :</p>
+          <p>
+            - Firebase et MongoDB (afin d'avoir des bases de données en ligne)
+          </p>
+          <p>- Redux pour gérer l'état de mes composants.</p>
+          <p>J'ai appris les bases des frameworks Gatsby et Ionic.</p>
+        </div>
+        <h5 className="pl-5">Projets PHP</h5>
         <div className="row">
           <a
             href="http://agenceimmophp.guillaumequeste.fr"
@@ -332,17 +328,39 @@ const App = () => (
             />
           </a>
         </div>
+        <div className="div_bouton_autres_projets">
+          <NavLink to="/autres_projets" className="bouton_lien">
+            <p className="p_bouton_lien">En voir plus sur mes autres projets</p>
+          </NavLink>
+        </div>
+      </div>
 
-        {/* autres projets */}
-        {/* <p className="pl-5">Autres projets React + backend</p>
-        <NavLink to="/autres_projets">lien</NavLink> */}
+      {/* parcours */}
+      <div className="parcours" id="parcours">
+        <div className="texte_parcours">
+          <div className="p_texte_parcours">
+            <p>
+              Mon parcours atypique me permet de m'adapter à toutes les
+              situations.
+              <br />
+              <NavLink to="/parcours" className="bouton_lien">
+                <p className="p_bouton_lien">En voir plus sur mon parcours</p>
+              </NavLink>
+            </p>
+          </div>
+        </div>
+        <div className="image">
+          <img src={parcours} alt="parcours" className="img_parcours" />
+        </div>
       </div>
 
       {/* contact */}
       <div className="contact" id="contact">
         <p className="p-2 text-center">
           Démarrons un projet ensemble, n'hésitez pas à{" "}
-          <NavLink to="/contact" className="lien_contact">me contacter</NavLink>
+          <NavLink to="/contact" className="lien_contact">
+            me contacter
+          </NavLink>
         </p>
       </div>
 

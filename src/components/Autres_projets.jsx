@@ -15,8 +15,7 @@ class Autres_projets extends Component {
           GQ
         </a>
 
-        <p>Autres projets</p>
-
+        <h3 className="text-center pt-2">Autres projets</h3>
       </div>
     );
   }

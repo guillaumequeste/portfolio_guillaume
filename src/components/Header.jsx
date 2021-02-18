@@ -23,17 +23,14 @@ class Header extends Component {
                   ABOUT ME
                 </a>
               </li>
-              {/* <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#parcours"
-              >
-                Parcours
-              </a>
-    </li> */}
               <li className="nav-item">
                 <a className="nav-link" href="#projets">
                   PROJETS
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#parcours">
+                  PARCOURS
                 </a>
               </li>
               <li className="nav-item">
