@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "./Helmet";
+import Footer2 from "./Footer2";
 
 class Contact extends Component {
   constructor(props) {
@@ -214,6 +215,8 @@ class Contact extends Component {
             onClick={this.handleSubmit}
           />
         </form>
+
+        <Footer2 />
       </div>
     );
   }
