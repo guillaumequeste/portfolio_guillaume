@@ -52,11 +52,9 @@
 
 .prenom_nom {
     margin: auto;
-    font-family: 'Carter One', cursive;
+    font-family: 'Carter One', cursive, sans-serif;
     font-size: 2.5em;
-    background: -webkit-linear-gradient(rgb(245, 140, 21), rgb(243, 44, 44));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(255, 115, 0);
 }
 
 @media screen and (min-width: 350px) {
