@@ -15,7 +15,18 @@ class Autres_projets extends Component {
           GQ
         </a>
 
-        <h3 className="text-center pt-2">Autres projets</h3>
+        <h3 className="text-center pt-5 pb-5">Autres projets</h3>
+
+        <div className="div_autre_projet">
+          <div className="texte_autre_projet">
+            <div className="div_texte_autre_projet">
+              <p>Projet React, Express, MongoDB, NodeJS</p>
+              <p>username : admin</p>
+              <p>mot de passe : 123456</p>
+            </div>
+          </div>
+          <div className="lien_autre_projet">lien autre projet</div>
+        </div>
       </div>
     );
   }
