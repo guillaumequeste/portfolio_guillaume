@@ -5,7 +5,7 @@ class Footer2 extends Component {
   render() {
     return (
       <div className="bodyFooter">
-        <div className="text-center">
+        <div className="text-center texte_footer">
           Créé par Guillaume Queste, 2021
         </div>
       </div>

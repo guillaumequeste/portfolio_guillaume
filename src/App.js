@@ -59,7 +59,6 @@ const App = () => (
             <p className="p_prenom_nom">Guillaume</p>
             <p>Queste</p>
           </div>
-          <div className="photo">photo</div>
         </div>
         <div className="liens">
           <div className="fichiers">
@@ -255,6 +254,9 @@ const App = () => (
           </a>
           </Fade>
         </div>
+        <p className="pl-2">(Agence immobilière : https://masuperagence-dac83.firebaseapp.com/admin/login<br />
+        mail : demo@demo.fr<br />
+        mot de passe : demo123)</p>
 
         {/* projets Vue */}
         <h3 className="pl-5 titre_projets">Projet Vue</h3>
@@ -370,6 +372,10 @@ const App = () => (
           </a>
           </Fade>
         </div>
+        <p className="pl-2">(Agence immobilière :<br />
+        nom d'utilisateur : admin<br />
+        mail : admin@admin.fr
+        mot de passe : admin123)</p>
         <div className="div_bouton_autres_projets">
           <NavLink to="/autres_projets" className="bouton_lien">
             <p className="p_bouton_lien">En voir plus sur mes autres projets</p>

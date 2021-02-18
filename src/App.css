@@ -45,26 +45,18 @@
 
 .identite {
     width: 100%;
-    height: 60%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-    .identite {
-        flex-direction: row;
-    }
+    padding-bottom: 10%;
 }
 
 .prenom_nom {
-    width: 100%;
-    height: 60%;
+    margin: auto;
     font-family: 'Carter One', cursive;
     font-size: 2.5em;
     background: -webkit-linear-gradient(rgb(245, 140, 21), rgb(243, 44, 44));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 5%;
 }
 
 @media screen and (min-width: 350px) {
@@ -76,7 +68,6 @@
 @media screen and (min-width: 768px) {
     .prenom_nom {
         font-size: 5em;
-        padding-left: 10%;
     }
 }
 
@@ -84,14 +75,9 @@
     margin: 0;
 }
 
-.photo {
-    width: 100%;
-    height: 40%;
-}
-
 .liens {
     width: 100%;
-    height: 20%;
+    height: 30%;
 }
 
 .fichiers {
@@ -280,7 +266,7 @@
     height: 20vh;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .projet {
         height: 35vh;
     }
@@ -446,6 +432,9 @@
         flex-direction: row;
         height: 30vh;
     }
+    .div_autre_projet2 {
+        flex-direction: row-reverse;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -527,6 +516,16 @@
     height: 7vh;
     width: 100%;
     background-color: #eae6df;
+}
+
+.texte_footer {
+    font-size: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+    .texte_footer {
+        font-size: 1em;
+    }
 }
 
 .chevron {
