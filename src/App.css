@@ -18,6 +18,7 @@
     font-weight: bold;
     font-size: 1.5em;
     background-color: #eae6df;
+    z-index: 3;
 }
 
 .accueil:hover {
@@ -548,6 +549,7 @@
     width: 100%;
     font-family: 'Cerebri', sans-serif;
     font-size: 0.8em;
+    z-index: 2;
 }
 
 .navbar {

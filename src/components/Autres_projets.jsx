@@ -3,6 +3,7 @@ import Helmet from "./Helmet";
 import patrimoine from "../img/mern.png";
 import bibliotheque from "../img/bibliotheque.png";
 import kids from "../img/kids.png";
+import Fade from "react-reveal/Fade";
 
 class Autres_projets extends Component {
 
@@ -21,6 +22,7 @@ class Autres_projets extends Component {
         <h3 className="text-center pt-5">Autres projets</h3>
 
         <div className="div_autre_projet pt-5">
+        <Fade left>
           <div className="texte_autre_projet">
             <div className="div_texte_autre_projet p-3">
               <p>Projet React, Express, MongoDB, NodeJS (MERN) : utilisation de mongoDB avec partie admin afin de créer, afficher, modifier, supprimer des items.<br />
@@ -28,6 +30,8 @@ class Autres_projets extends Component {
               - mot de passe : 123456</p>
             </div>
           </div>
+          </Fade>
+          <Fade right>
           <div className="lien_autre_projet">
           <a
             href="http://gui-patrimoine.herokuapp.com"
@@ -37,9 +41,11 @@ class Autres_projets extends Component {
             <img src={patrimoine} alt="patrimoine" className="img_lien_autre_projet" />
           </a>
           </div>
+          </Fade>
         </div>
 
         <div className="div_autre_projet pt-5">
+        <Fade left>
           <div className="lien_autre_projet">
           <a
             href="http://bibliotheque.guillaumequeste.fr"
@@ -49,6 +55,8 @@ class Autres_projets extends Component {
             <img src={bibliotheque} alt="bibliotheque" className="img_lien_autre_projet" />
           </a>
           </div>
+          </Fade>
+          <Fade right>
           <div className="texte_autre_projet">
             <div className="div_texte_autre_projet p-3">
               <p>Projet React et Firebase : utilisation de Firebase avec partie admin afin de créer, afficher, modifier, supprimer des items.</p>
@@ -56,14 +64,18 @@ class Autres_projets extends Component {
               <p>mot de passe : demo123</p>
             </div>
           </div>
+          </Fade>
         </div>
 
         <div className="div_autre_projet pt-5 pb-5">
+        <Fade left>
           <div className="texte_autre_projet">
             <div className="div_texte_autre_projet p-3">
               <p>Projet React-Redux</p>
             </div>
           </div>
+          </Fade>
+          <Fade right>
           <div className="lien_autre_projet">
           <a
             href="http://kids.guillaumequeste.fr"
@@ -73,6 +85,7 @@ class Autres_projets extends Component {
             <img src={kids} alt="kids" className="img_lien_autre_projet" />
           </a>
           </div>
+          </Fade>
         </div>
 
       </div>

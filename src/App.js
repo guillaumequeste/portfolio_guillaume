@@ -30,6 +30,8 @@ import parcours from "./img/parcours.jpg";
 import cv from "./docs/CVGuillaumeQueste.pdf";
 import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
 
+import Fade from "react-reveal/Fade";
+
 const App = () => (
   <>
     <Helmet
@@ -112,32 +114,36 @@ const App = () => (
 
       {/* about me */}
       <div className="about_me" id="about_me">
-        <div className="texte_about_me">
-          <div className="p_texte_about_me">
-            <p>
-              Ayant découvert le monde du développement web lors d'une
-              reconversion professionnelle, j'ai appris, en grande partie, en
-              autodidacte.
-            </p>
-            <p>
-              Rigoureux, sérieux et passionné, je peux vous aider à réaliser vos
-              projets.
-            </p>
+        <Fade left>
+          <div className="texte_about_me">
+            <div className="p_texte_about_me">
+              <p>
+                Ayant découvert le monde du développement web lors d'une
+                reconversion professionnelle, j'ai appris, en grande partie, en
+                autodidacte.
+              </p>
+              <p>
+                Rigoureux, sérieux et passionné, je peux vous aider à réaliser
+                vos projets.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="barres">
-          <div className="p_barres">
-            <h5 className="text-center font-italic pt-3 pb-2">
-              <u>Compétences</u>
-            </h5>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>Angular</p>
-            <p>Vue</p>
+        </Fade>
+        <Fade right>
+          <div className="barres">
+            <div className="p_barres">
+              <h5 className="text-center font-italic pt-3 pb-2">
+                <u>Compétences</u>
+              </h5>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>React</p>
+              <p>Angular</p>
+              <p>Vue</p>
+            </div>
           </div>
-        </div>
+        </Fade>
       </div>
 
       {/* projets */}
@@ -145,31 +151,38 @@ const App = () => (
         {/* projets React */}
         <h3 className="pl-5 titre_projets">Projets React</h3>
         <div className="row">
-          <a
-            href="http://www.marinequeste.fr"
-            target="_blank"
-            className="col-6 col-md-4 projet"
-          >
-            <img
-              src={portfolio_marine}
-              alt="portfolio_marine"
-              className="img_projet"
-            />
-          </a>
-          <a
-            href="http://cinema.guillaumequeste.fr"
-            target="_blank"
-            className="col-6 col-md-4 projet"
-          >
-            <img src={cinema} alt="cinema" className="img_projet" />
-          </a>
-          <a
-            href="http://decouverte.guillaumequeste.fr"
-            target="_blank"
-            className="col-6 col-md-4 projet"
-          >
-            <img src={decouverte} alt="decouverte" className="img_projet" />
-          </a>
+          <Fade left duration={400}>
+            <a
+              href="http://www.marinequeste.fr"
+              target="_blank"
+              className="col-6 col-md-4 projet"
+            >
+              <img
+                src={portfolio_marine}
+                alt="portfolio_marine"
+                className="img_projet"
+              />
+            </a>
+          </Fade>
+          <Fade left duration={800}>
+            <a
+              href="http://cinema.guillaumequeste.fr"
+              target="_blank"
+              className="col-6 col-md-4 projet"
+            >
+              <img src={cinema} alt="cinema" className="img_projet" />
+            </a>
+          </Fade>
+          <Fade left duration={1200}>
+            <a
+              href="http://decouverte.guillaumequeste.fr"
+              target="_blank"
+              className="col-6 col-md-4 projet"
+            >
+              <img src={decouverte} alt="decouverte" className="img_projet" />
+            </a>
+          </Fade>
+          <Fade left duration={400}>
           <a
             href="http://histoire.guillaumequeste.fr"
             target="_blank"
@@ -177,6 +190,8 @@ const App = () => (
           >
             <img src={histoire} alt="histoire" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://map.guillaumequeste.fr"
             target="_blank"
@@ -184,6 +199,8 @@ const App = () => (
           >
             <img src={map} alt="map" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={1200}>
           <a
             href="http://cuisine.guillaumequeste.fr"
             target="_blank"
@@ -191,6 +208,8 @@ const App = () => (
           >
             <img src={cuisine} alt="cuisine" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={400}>
           <a
             href="http://weather.guillaumequeste.fr"
             target="_blank"
@@ -198,6 +217,8 @@ const App = () => (
           >
             <img src={weather} alt="weather" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://chevaux.guillaumequeste.fr"
             target="_blank"
@@ -205,11 +226,13 @@ const App = () => (
           >
             <img src={chevaux} alt="chevaux" className="img_projet" />
           </a>
+          </Fade>
         </div>
 
         {/* projets Angular */}
         <h3 className="pl-5 titre_projets">Projets Angular</h3>
         <div className="row">
+        <Fade left duration={400}>
           <a
             href="http://fruitslegumes.guillaumequeste.fr"
             target="_blank"
@@ -221,6 +244,8 @@ const App = () => (
               className="img_projet"
             />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://agence.guillaumequeste.fr"
             target="_blank"
@@ -228,11 +253,13 @@ const App = () => (
           >
             <img src={agence} alt="agence" className="img_projet" />
           </a>
+          </Fade>
         </div>
 
         {/* projets Vue */}
         <h3 className="pl-5 titre_projets">Projet Vue</h3>
         <div className="row">
+        <Fade left duration={400}>
           <a
             href="http://litterature.guillaumequeste.fr"
             target="_blank"
@@ -240,11 +267,13 @@ const App = () => (
           >
             <img src={litterature} alt="litterature" className="img_projet" />
           </a>
+          </Fade>
         </div>
 
         {/* projets HTML/CSS */}
         <h3 className="pl-5 titre_projets">Projets HTML/CSS</h3>
         <div className="row">
+        <Fade left duration={400}>
           <a
             href="http://dictionnaire.guillaumequeste.fr"
             target="_blank"
@@ -252,6 +281,8 @@ const App = () => (
           >
             <img src={dictionnaire} alt="dictionnaire" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://parallaxe.guillaumequeste.fr"
             target="_blank"
@@ -259,6 +290,8 @@ const App = () => (
           >
             <img src={parallaxe} alt="parallaxe" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={1200}>
           <a
             href="http://voyage.guillaumequeste.fr"
             target="_blank"
@@ -266,11 +299,13 @@ const App = () => (
           >
             <img src={voyage} alt="voyage" className="img_projet" />
           </a>
+          </Fade>
         </div>
 
         {/* projets JS */}
         <h3 className="pl-5 titre_projets">Projet JavaScript</h3>
         <div className="row">
+        <Fade left duration={400}>
           <a
             href="http://actrices.guillaumequeste.fr"
             target="_blank"
@@ -278,6 +313,8 @@ const App = () => (
           >
             <img src={actrices} alt="actrices" className="img_projet" />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://serpent.guillaumequeste.fr"
             target="_blank"
@@ -285,6 +322,7 @@ const App = () => (
           >
             <img src={serpent} alt="serpent" className="img_projet" />
           </a>
+          </Fade>
         </div>
 
         {/* autres projets */}
@@ -305,6 +343,7 @@ const App = () => (
         </div>
         <h5 className="pl-5">Projets PHP</h5>
         <div className="row">
+        <Fade left duration={400}>
           <a
             href="http://agenceimmophp.guillaumequeste.fr"
             target="_blank"
@@ -316,6 +355,8 @@ const App = () => (
               className="img_projet"
             />
           </a>
+          </Fade>
+          <Fade left duration={800}>
           <a
             href="http://sitedynamique.guillaumequeste.fr"
             target="_blank"
@@ -327,6 +368,7 @@ const App = () => (
               className="img_projet"
             />
           </a>
+          </Fade>
         </div>
         <div className="div_bouton_autres_projets">
           <NavLink to="/autres_projets" className="bouton_lien">
@@ -337,6 +379,7 @@ const App = () => (
 
       {/* parcours */}
       <div className="parcours" id="parcours">
+      <Fade right>
         <div className="texte_parcours">
           <div className="p_texte_parcours">
             <div>
@@ -349,9 +392,12 @@ const App = () => (
             </div>
           </div>
         </div>
+        </Fade>
+        <Fade left>
         <div className="image">
           <img src={parcours} alt="parcours" className="img_parcours" />
         </div>
+        </Fade>
       </div>
 
       {/* contact */}
