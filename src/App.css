@@ -585,6 +585,10 @@
     background-color: #eae6df;
 }
 
+.scroll {
+    text-decoration: line-through rgb(236, 33, 158) 2px !important;
+}
+
 
 /******************** Not Found ***********************/
 
@@ -608,8 +612,11 @@
 }
 
 .div_titres_parcours {
+    position: fixed;
     width: 90%;
     height: 7vh;
+    background-color: #eae6df;
+    z-index: 2;
     display: flex;
 }
 

@@ -4,6 +4,29 @@ import Footer2 from "./Footer2";
 import Fade from "react-reveal/Fade";
 
 class Parcours extends Component {
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    /* Use window.innerHeight and multiply it by fraction. For example, if you want 60 vh use (window.innerHeight)*0.6. */
+    if (window.pageYOffset <= (window.innerHeight)*1) {
+      document.querySelector(".exp").className = "titre_parcours_detail exp scroll";
+    } else {
+      document.querySelector(".exp").className = "titre_parcours_detail exp";
+    }
+    if (window.pageYOffset > (window.innerHeight)*1) {
+      document.querySelector(".form").className = "titre_parcours_detail form scroll";
+    } else {
+      document.querySelector(".form").className = "titre_parcours_detail form";
+    }
+  };
+
   render() {
     return (
       <div className="bodyParcours">
@@ -18,12 +41,12 @@ class Parcours extends Component {
 
         <div className="div_titres_parcours">
           <div className="titre_parcours">
-            <a href="#exp_pro" className="titre_parcours_detail">
+            <a href="#exp_pro" className="titre_parcours_detail exp">
               Expérience pro
             </a>
           </div>
           <div className="titre_parcours">
-            <a href="#formation" className="titre_parcours_detail">
+            <a href="#formation" className="titre_parcours_detail form">
               Formation
             </a>
           </div>
