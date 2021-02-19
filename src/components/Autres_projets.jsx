@@ -15,17 +15,17 @@ class Autres_projets extends Component {
         />
 
         <a href="/" className="accueil">
-          GQ
+          Home
         </a>
 
-        <h3 className="text-center pt-5">Autres projets</h3>
+        <h3 className="text-center pt-5 titre_autres_projets">Autres projets</h3>
 
         <div className="div_autre_projet pt-5">
           <Fade left>
             <div className="texte_autre_projet">
               <div className="div_texte_autre_projet p-3">
                 <p>
-                  Projet React, Express, MongoDB, NodeJS (MERN) : utilisation de
+                  <b>Projet React, Express, MongoDB, NodeJS (MERN)</b> : utilisation de
                   mongoDB avec partie admin afin de créer, afficher, modifier,
                   supprimer des items.
                   <br />
@@ -57,7 +57,7 @@ class Autres_projets extends Component {
             <div className="texte_autre_projet">
               <div className="div_texte_autre_projet p-3">
                 <p>
-                  Projet React et Firebase : utilisation de Firebase avec partie
+                  <b>Projet React et Firebase</b> : utilisation de Firebase avec partie
                   admin afin de créer, afficher, modifier, supprimer des items.
                 </p>
                 <p>mail : demo@demo.fr</p>
@@ -86,7 +86,7 @@ class Autres_projets extends Component {
           <Fade left>
             <div className="texte_autre_projet">
               <div className="div_texte_autre_projet p-3">
-                <p>Projet React-Redux : utilisation de Redux afin de gérer l'état des composants</p>
+                <p><b>Projet React-Redux</b> : utilisation de Redux afin de gérer l'état des composants</p>
               </div>
             </div>
           </Fade>

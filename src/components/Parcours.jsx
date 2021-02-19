@@ -29,9 +29,11 @@ class Parcours extends Component {
           </div>
         </div>
 
+        <Fade left>
         <h5 id="exp_pro" className="pl-5">
-          <u>Expérience professionnelle</u>
+          <p>Expérience professionnelle</p>
         </h5>
+        </Fade>
 
         <Fade left>
           <div className="div_exp_pro_tour">
@@ -40,27 +42,27 @@ class Parcours extends Component {
                 Développeur indépendant
               </h4>
               <h6 className="text-center h6_exp_pro">2018 - aujourd'hui</h6>
-              <p>Développement de projets</p>
-              <p>
+              <p className="p_parcours">Développement de projets</p>
+              <p className="p_parcours">
                 Rédaction du cahier des charges (navigation, disposition des
                 différents éléments, couleurs...)
               </p>
-              <p>Code, tests et vérifications</p>
-              <p>Mise en ligne</p>
-              <p>Mises à jour</p>
+              <p className="p_parcours">Code, tests et vérifications</p>
+              <p className="p_parcours">Mise en ligne</p>
+              <p className="p_parcours">Mises à jour</p>
             </div>
           </div>
         </Fade>
 
-        <Fade left>
+        <Fade right>
           <div className="div_exp_pro_tour">
             <div className="div_exp_pro">
               <h4 className="h4_exp_pro pt-2 text-center">FLUNCH</h4>
               <h4 className="h4_exp_pro text-center">Assistant de direction</h4>
               <h6 className="text-center h6_exp_pro">2015 - 2017</h6>
-              <p>Gestion commerciale : prévision des ventes, tarifs, marges</p>
-              <p>Suivi et minimisation des démarques</p>
-              <p>Management, gestion de la relation client</p>
+              <p className="p_parcours">Gestion commerciale : prévision des ventes, tarifs, marges</p>
+              <p className="p_parcours">Suivi et minimisation des démarques</p>
+              <p className="p_parcours">Management, gestion de la relation client</p>
             </div>
           </div>
         </Fade>
@@ -73,15 +75,15 @@ class Parcours extends Component {
                 Assistant au contrôle financier
               </h4>
               <h6 className="text-center h6_exp_pro">2012</h6>
-              <p>
+              <p className="p_parcours">
                 Consolidation des résultats des sociétés de la région nord-ouest
               </p>
-              <p>Rédaction de notes de synthèse destinées à la direction</p>
+              <p className="p_parcours">Rédaction de notes de synthèse destinées à la direction</p>
             </div>
           </div>
         </Fade>
 
-        <Fade left>
+        <Fade right>
           <div className="div_exp_pro_tour">
             <div className="div_exp_pro">
               <h4 className="h4_exp_pro pt-2 text-center">ESPRIT</h4>
@@ -89,18 +91,20 @@ class Parcours extends Component {
                 Assistant au contrôle de gestion
               </h4>
               <h6 className="text-center h6_exp_pro">2011</h6>
-              <p>
+              <p className="p_parcours">
                 Mise en place de reportings mensuels et création de tableaux de
                 bord
               </p>
-              <p>Mise en place d'un système EDI</p>
+              <p className="p_parcours">Mise en place d'un système EDI</p>
             </div>
           </div>
         </Fade>
 
+        <Fade left>
         <h5 id="formation" className="pl-5">
-          <u>Formation</u>
+          <p>Formation</p>
         </h5>
+        </Fade>
 
         <Fade left>
           <div className="div_exp_pro_tour">
@@ -119,7 +123,7 @@ class Parcours extends Component {
           </div>
         </Fade>
 
-        <Fade left>
+        <Fade right>
           <div className="div_exp_pro_tour">
             <div className="div_formation">
               <h6 className="text-center h6_exp_pro pt-2">2004 - 2010</h6>
@@ -152,7 +156,7 @@ class Parcours extends Component {
           </div>
         </Fade>
 
-        <Fade left>
+        <Fade right>
           <div className="div_exp_pro_tour">
             <div className="div_formation">
               <h6 className="text-center h6_exp_pro pt-2">2002</h6>

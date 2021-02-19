@@ -430,6 +430,10 @@
     min-height: 100vh;
 }
 
+.titre_autres_projets {
+    text-decoration: underline rgb(236, 33, 158) 2px;
+}
+
 .div_autre_projet {
     width: 100%;
     height: 80vh;
@@ -511,6 +515,7 @@
 
 .titreContact {
     font-size: 1em;
+    text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -622,7 +627,11 @@
 
 .titre_parcours_detail:hover {
     color: black;
-    text-decoration: none;
+    text-decoration: line-through rgb(236, 33, 158) 2px;
+}
+
+#exp_pro {
+    text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
 .div_exp_pro_tour {
@@ -631,7 +640,9 @@
 
 @media screen and (min-width: 768px) {
     .div_exp_pro_tour {
+        width: 50%;
         padding: 2%;
+        margin: auto;
     }
 }
 
@@ -643,6 +654,14 @@
 
 .h6_exp_pro {
     color: grey;
+}
+
+.p_parcours {
+    margin: 0;
+}
+
+#formation {
+    text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
 .div_formation {
