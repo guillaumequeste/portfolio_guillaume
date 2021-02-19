@@ -332,16 +332,20 @@ const App = () => (
         <div className="div_autres_projets">
           <p>
             Curieux de nature, je m'intéresse également au côté back-end et aux
-            différentes technologies qui existent. Ainsi, j'ai appris les bases
-            des langages PHP et Java et j'ai appris à utiliser les frameworks
-            Symfony (avec MySQL) et Eclipse.
+            différentes technologies qui existent. Ainsi, j'ai appris les bases de :
           </p>
-          <p>J'ai appris à associer React avec :</p>
-          <p>
-            - Firebase et MongoDB (afin d'avoir des bases de données en ligne)
-          </p>
-          <p>- Redux pour gérer l'état de mes composants.</p>
-          <p>J'ai appris les bases des frameworks Gatsby et Ionic.</p>
+          <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Symfony</li>
+            <li>Java</li>
+            <li>Eclipse</li>
+            <li>React + Firebase</li>
+            <li>React + MongoDB</li>
+            <li>React + Redux</li>
+            <li>Gatsby</li>
+            <li>Ionic</li>
+          </ul>
         </div>
         <h5 className="pl-5">Projets PHP</h5>
         <div className="row">
@@ -384,9 +388,9 @@ const App = () => (
       </div>
 
       {/* parcours */}
-      <div className="parcours" id="parcours">
+      <div className="parcours row" id="parcours">
       <Fade right>
-        <div className="texte_parcours">
+        <div className="texte_parcours col-12 col-md-6">
           <div className="p_texte_parcours">
             <div>
               Mon parcours atypique me permet de m'adapter à toutes les
@@ -401,7 +405,7 @@ const App = () => (
         </div>
         </Fade>
         <Fade left>
-        <div className="image">
+        <div className="image col-12 col-md-6">
           <img src={parcours} alt="parcours" className="img_parcours" />
         </div>
         </Fade>

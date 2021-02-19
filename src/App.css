@@ -291,9 +291,8 @@
 /* parcours */
 
 .parcours {
+    width: 100%;
     padding-top: 7vh;
-    display: flex;
-    flex-direction: column;
     font-family: 'Lato', sans-serif;
     min-height: 55vh;
 }
@@ -312,36 +311,24 @@
 }
 
 .texte_parcours {
-    width: 100%;
-    height: 50%;
     display: flex;
-    padding: 5%;
-    text-align: justify;
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    .texte_parcours {
-        height: 100%;
-        font-size: 2em;
-    }
+    height: 100%;
 }
 
 .p_texte_parcours {
     margin: auto;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    .p_texte_parcours {
+        font-size: 2em;
+    }
 }
 
 .image {
-    width: 100%;
+    height: 100%;
     display: flex;
-}
-
-@media screen and (min-width: 1024px) {
-    .image {
-        width: 100%;
-        height: 100%;
-        padding-left: 5%;
-    }
 }
 
 .img_parcours {
@@ -359,9 +346,9 @@
 
 @media screen and (min-width: 768px) {
     .bouton_lien {
-        width: 400px;
+        width: 340px;
         height: 50px;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
