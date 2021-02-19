@@ -392,6 +392,7 @@ const App = () => (
               Mon parcours atypique me permet de m'adapter à toutes les
               situations.
               <br />
+              <br />
               <NavLink to="/parcours" className="bouton_lien">
                 <p className="p_bouton_lien">En voir plus sur mon parcours</p>
               </NavLink>

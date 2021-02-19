@@ -295,32 +295,20 @@
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
+    min-height: 55vh;
 }
 
 @media screen and (min-width: 768px) {
     .parcours {
         flex-direction: row-reverse;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .parcours {
         height: 100vh;
     }
-}
-
-.image {
-    width: 100%;
-    height: 50%;
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    .image {
-        width: 50%;
-        height: 100%;
-        padding-left: 5%;
-    }
-}
-
-.img_parcours {
-    width: 100%;
-    margin: auto;
 }
 
 .texte_parcours {
@@ -334,13 +322,30 @@
 
 @media screen and (min-width: 768px) {
     .texte_parcours {
-        width: 50%;
         height: 100%;
         font-size: 2em;
     }
 }
 
 .p_texte_parcours {
+    margin: auto;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .image {
+        width: 100%;
+        height: 100%;
+        padding-left: 5%;
+    }
+}
+
+.img_parcours {
+    width: 80%;
     margin: auto;
 }
 
@@ -390,9 +395,16 @@
 .contact {
     min-height: 20vh;
     font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 768px) {
+    .contact {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .contact {
         font-size: 2em;
         line-height: 20vh;
