@@ -346,6 +346,7 @@ const App = () => (
             <li>Gatsby</li>
             <li>Ionic</li>
           </ul>
+          <p>Le code de tous ces projets est disponible sur mon compte github (lien en haut de la page).</p>
         </div>
         <h5 className="pl-5">Projets PHP</h5>
         <div className="row">
