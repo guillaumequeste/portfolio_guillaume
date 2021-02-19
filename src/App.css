@@ -19,11 +19,19 @@
     font-size: 1.5em;
     background-color: #eae6df;
     z-index: 3;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+    .accueil {
+        font-size: 1em;
+    }
 }
 
 .accueil:hover {
     cursor: pointer;
     color: black;
+    text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
 
@@ -214,6 +222,7 @@
     margin: auto;
     padding-left: 5%;
     background-color: white;
+    box-shadow: 10px 5px 5px black;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,7 +250,7 @@
 .titre_projets {
     font-style: italic;
     font-size: 1.3em;
-    text-decoration: underline;
+    text-decoration: underline rgb(236, 33, 158) 2px;
     padding-top: 20%;
     padding-bottom: 2%;
 }
@@ -285,6 +294,10 @@
 .div_autres_projets {
     padding: 0 5%;
     text-align: justify;
+}
+
+.titre_projets_php {
+    text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
 
@@ -557,6 +570,10 @@
 .nav-link {
     width: 10vw;
     color: black !important;
+}
+
+.nav-link:hover {
+    text-decoration: line-through rgb(236, 33, 158) 2px !important;
 }
 
 .navbar-nav {
