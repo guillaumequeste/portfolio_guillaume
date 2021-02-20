@@ -307,7 +307,7 @@
     width: 100%;
     padding-top: 7vh;
     font-family: 'Lato', sans-serif;
-    min-height: 55vh;
+    min-height: 25vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -341,12 +341,30 @@
 
 .image {
     height: 100%;
-    display: flex;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        display: flex;
+    }
 }
 
 .img_parcours {
     width: 80%;
     margin: auto;
+}
+
+.image2 {
+    height: 100%;
+    text-align: center;
+    padding: 5% 0;
+}
+
+@media screen and (min-width: 768px) {
+    .image2 {
+        display: none;
+    }
 }
 
 .bouton_lien {

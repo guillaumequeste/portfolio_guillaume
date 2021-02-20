@@ -463,6 +463,11 @@ const App = () => (
           </div>
         </Fade>
       </div>
+      <Fade left>
+          <div className="image2 col-12 col-md-6">
+            <img src={parcours} alt="parcours" className="img_parcours" />
+          </div>
+        </Fade>
 
       {/* contact */}
       <div className="contact" id="contact">
