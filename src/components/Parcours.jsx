@@ -36,7 +36,7 @@ class Parcours extends Component {
         />
 
         <a href="/" className="accueil">
-          GQ
+          Home
         </a>
 
         <div className="div_titres_parcours">
