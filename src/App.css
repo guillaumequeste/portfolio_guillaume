@@ -688,6 +688,7 @@
 }
 
 #exp_pro {
+    padding-top: 8vh;
     text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
@@ -719,6 +720,7 @@
 }
 
 #formation {
+    padding-top: 2vh;
     text-decoration: underline rgb(236, 33, 158) 2px;
 }
 
