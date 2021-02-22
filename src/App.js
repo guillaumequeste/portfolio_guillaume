@@ -147,12 +147,71 @@ const App = () => (
               <h5 className="text-center font-italic pt-3 pb-2">
                 <u>Compétences</u>
               </h5>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-              <p>React</p>
-              <p>Angular</p>
-              <p>Vue</p>
+              <div className="div_comp">
+                <p className="competences">HTML5 / CSS3 / SASS</p>
+                <div className="div_rectangles">
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle op"></div>
+                </div>
+              </div>
+              <div className="div_comp">
+                <p className="competences">React</p>
+                <div className="div_rectangles">
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                </div>
+              </div>
+              <div className="div_comp">
+                <p className="competences">Angular</p>
+                <div className="div_rectangles">
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                </div>
+              </div>
+              <div className="div_comp">
+                <p className="competences">Vue</p>
+                <div className="div_rectangles">
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                </div>
+              </div>
+              <div className="div_comp">
+                <p className="competences">Git / GitHub</p>
+                <div className="div_rectangles">
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                  <div className="rectangle op"></div>
+                  <div className="rectangle op"></div>
+                </div>
+              </div>
             </div>
           </div>
         </Fade>
@@ -464,10 +523,10 @@ const App = () => (
         </Fade>
       </div>
       <Fade left>
-          <div className="image2 col-12 col-md-6">
-            <img src={parcours} alt="parcours" className="img_parcours" />
-          </div>
-        </Fade>
+        <div className="image2 col-12 col-md-6">
+          <img src={parcours} alt="parcours" className="img_parcours" />
+        </div>
+      </Fade>
 
       {/* contact */}
       <div className="contact" id="contact">
