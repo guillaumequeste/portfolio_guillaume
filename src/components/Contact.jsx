@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "./Helmet";
 import Footer2 from "./Footer2";
+import { NavLink } from "react-router-dom";
 
 class Contact extends Component {
   constructor(props) {
@@ -119,9 +120,9 @@ class Contact extends Component {
           link={"https://www.guillaumequeste.fr/contact"}
         />
 
-        <a href="/" className="accueil">
+        <NavLink to="/" className="accueil">
           Home
-        </a>
+        </NavLink>
 
         <form className="container pb-5">
           <h3 className="text-center pt-5 titreContact">Formulaire de contact</h3>

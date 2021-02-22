@@ -42,9 +42,9 @@ const App = () => (
     <Header />
 
     <div className="app">
-      <a href="/" className="accueil">
+      <NavLink to="/" className="accueil">
         Home
-      </a>
+      </NavLink>
 
       {/* home */}
       <div className="home" id="home">

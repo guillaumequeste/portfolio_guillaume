@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Helmet from "./Helmet";
+import Footer2 from "./Footer2";
 import patrimoine from "../img/mern.png";
 import bibliotheque from "../img/bibliotheque.png";
 import kids from "../img/kids.png";
 import Fade from "react-reveal/Fade";
+import { NavLink } from "react-router-dom";
 
 class Autres_projets extends Component {
   render() {
@@ -14,9 +16,9 @@ class Autres_projets extends Component {
           link={"https://www.guillaumequeste.fr/autres_projets"}
         />
 
-        <a href="/" className="accueil">
+        <NavLink to="/" className="accueil">
           Home
-        </a>
+        </NavLink>
 
         <h3 className="text-center pt-5 titre_autres_projets">Autres projets</h3>
 
@@ -102,6 +104,8 @@ class Autres_projets extends Component {
             </div>
           </Fade>
         </div>
+
+        <Footer2 />
       </div>
     );
   }
