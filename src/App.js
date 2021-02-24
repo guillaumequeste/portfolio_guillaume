@@ -26,6 +26,7 @@ import sitedynamique from "./img/sitedynamique.jpg";
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
 import parcours from "./img/parcours.jpg";
+import photo from "./img/photo.JPG";
 
 import cv from "./docs/CVGuillaumeQueste.pdf";
 import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
@@ -60,8 +61,13 @@ const App = () => (
         <Zoom top>
           <div className="identite">
             <div className="prenom_nom">
-              <p className="p_prenom_nom">Guillaume</p>
-              <p>Queste</p>
+              <p className="p_prenom_nom">
+                Guillaume <br />
+                Queste
+              </p>
+            </div>
+            <div className="photo">
+              <img src={photo} alt="photo" className="img_photo" />
             </div>
           </div>
         </Zoom>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+:root {
+    --main-color: rgb(255, 115, 0);
+    ;
+}
+
 
 /******************** Accueil ***********************/
 
@@ -31,7 +36,7 @@
 .accueil:hover {
     cursor: pointer;
     color: black;
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 
@@ -59,26 +64,68 @@
 }
 
 .prenom_nom {
+    width: 70%;
+    height: 100%;
     margin: auto;
-    font-family: 'Carter One', cursive, sans-serif;
-    font-size: 2.5em;
-    color: rgb(255, 115, 0);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 360px) {
     .prenom_nom {
-        font-size: 3.5em;
+        font-size: 2.7em;
     }
 }
 
 @media screen and (min-width: 768px) {
     .prenom_nom {
-        font-size: 5em;
+        font-size: 4.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .prenom_nom {
+        width: 60%;
     }
 }
 
 .p_prenom_nom {
-    margin: 0;
+    margin: auto;
+}
+
+.photo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .photo {
+        width: 40%;
+    }
+}
+
+.img_photo {
+    margin: auto;
+    width: 70%;
+    border: 2px solid grey;
+}
+
+@media screen and (min-width: 768px) {
+    .img_photo {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .img_photo {
+        width: 30%;
+        margin-left: 10%;
+    }
 }
 
 .liens {
@@ -274,7 +321,7 @@
 .titre_projets {
     font-style: italic;
     font-size: 1.3em;
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
     padding-top: 20%;
     padding-bottom: 2%;
 }
@@ -321,7 +368,7 @@
 }
 
 .titre_projets_php {
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 
@@ -473,7 +520,7 @@
 }
 
 .titre_autres_projets {
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 .div_autre_projet {
@@ -556,7 +603,7 @@
 }
 
 .titreContact {
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 
@@ -649,11 +696,11 @@
 .nav_parcours:hover,
 .nav_contact:hover {
     color: black;
-    text-decoration: line-through rgb(236, 33, 158) 2px;
+    text-decoration: line-through var(--main-color) 2px;
 }
 
 .scroll {
-    text-decoration: line-through rgb(236, 33, 158) 2px;
+    text-decoration: line-through var(--main-color) 2px;
 }
 
 
@@ -701,12 +748,12 @@
 
 .titre_parcours_detail:hover {
     color: black;
-    text-decoration: line-through rgb(236, 33, 158) 2px;
+    text-decoration: line-through var(--main-color) 2px;
 }
 
 #exp_pro {
     padding-top: 8vh;
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 .div_exp_pro_tour {
@@ -741,7 +788,7 @@
 
 #formation {
     padding-top: 8vh;
-    text-decoration: underline rgb(236, 33, 158) 2px;
+    text-decoration: underline var(--main-color) 2px;
 }
 
 .div_formation {
