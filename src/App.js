@@ -26,7 +26,7 @@ import sitedynamique from "./img/sitedynamique.jpg";
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
 import parcours from "./img/parcours.jpg";
-import photo from "./img/photo.JPG";
+import photo_guillaume from "./img/photo_guillaume.jpg";
 
 import cv from "./docs/CVGuillaumeQueste.pdf";
 import projets from "./docs/CVGuillaumeQuesteExperiences.pdf";
@@ -67,7 +67,7 @@ const App = () => (
               </p>
             </div>
             <div className="photo">
-              <img src={photo} alt="photo" className="img_photo" />
+              <img src={photo_guillaume} alt="photo_guillaume" className="img_photo" />
             </div>
           </div>
         </Zoom>
